@@ -194,7 +194,7 @@ body {
 
 .card a {
     text-decoration: none;
-    color: #007bff;
+    /* color: #007bff; */
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -215,7 +215,7 @@ body {
             <h3>SMOPL HRMS</h3>
             <p><strong><?php echo $_SESSION['email']; ?></strong></p>
             <a href="#" class="button">Dashboard</a>
-            <a href="#" class="button">Documents</a>
+            <a href="document.php" class="button">Documents</a>
             <a href="logout.php" class="button">Logout</a>
         </div>
         <div class="content">

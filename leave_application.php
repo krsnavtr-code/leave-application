@@ -43,6 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             padding: 20px;
             min-height: 100vh;
             align-items: center;
+            flex-direction: column-reverse;
+            gap: 40px;
         }
 
         .form-container {

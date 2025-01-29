@@ -24,13 +24,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email'])) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // Gmail's SMTP server
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'krishnaavtar955@gmail.com'; // Your Gmail address
-        $mail->Password   = 'lwrt lxps qvkd isyq'; // Your Gmail password (or an App Password if 2FA is enabled)
+        $mail->Username   = 'meenamandel7@gmail.com'; // Your Gmail address
+        $mail->Password   = 'znjc pboo yxsh pnjd'; // Your Gmail password (or an App Password if 2FA is enabled)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use STARTTLS encryption
         $mail->Port       = 587; // Gmail SMTP port
 
         // Set the sender and recipient
-        $mail->setFrom('krishnaavtar955@gmail.com', 'SMOPL HRMS');
+        $mail->setFrom('meenamandel7@gmail.com', 'SMOPL HRMS');
         $mail->addAddress($email); // The email to send OTP to
 
         // Set email subject and body

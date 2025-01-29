@@ -9,9 +9,12 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
+} 
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
 }
 
-session_start();
 
 // Auto logout after 20 minutes
 if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1200)) {
